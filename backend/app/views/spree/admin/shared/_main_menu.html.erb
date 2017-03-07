@@ -39,9 +39,3 @@
     <%= main_menu_tree Spree.t(:configurations), icon: "wrench", sub_menu: "configuration", url: "#sidebar-configuration" %>
   </ul>
 <% end %>
-
-<% if can? :admin, Spree::Product %>
-  <ul class="nav nav-sidebar">
-    <%= main_menu_tree "ERP Integration", icon: "th-large",url: "#sidebar-product" %>
-  </ul>
-<% end %>
